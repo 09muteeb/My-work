@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* globals.css or any other global CSS file */
+
+/* Product Container Styles */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap between items */
+    justify-content: center; /* Centers the items horizontally */
+  }
+  
+  /* For Grid View */
+  .product-container.grid-view {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* Adjust the gap between items */
+  }
+  
+  /* For List View */
+  .product-container.list-view {
+    display: block;
+  }
+  
+  /* Individual product item styles */
+  .product-container li {
+    list-style: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%; /* Makes sure list view takes up full width */
+  }
+  
+  .product-container li img {
+    width: 100%; /* Ensure the image is responsive */
+    max-width: 200px;
+    height: auto;
+  }
+  

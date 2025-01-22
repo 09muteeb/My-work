@@ -5,6 +5,7 @@ import Navbar from "./components/navbar/page";
 import Header from "./components/menu/page";
 import Bar from "./components/bar/page"; // Adjust path based on your folder structure
 import Products from "./components/product/page"; // Adjust path to the Products component
+import Footer from "./components/footer/page";
 
 const Page: React.FC = () => {
   // Mock static values for the Bar component
@@ -39,6 +40,8 @@ const Page: React.FC = () => {
 
       {/* Product List Component */}
       <Products />
+
+      <Footer/>
     </div>
   );
 };
